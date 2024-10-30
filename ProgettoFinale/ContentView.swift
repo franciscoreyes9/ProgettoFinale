@@ -17,7 +17,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 HStack {
-                    TextField("Nuova task..", text: $mioTodo)
+                    TextField("Nuova task...", text: $mioTodo)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     Button(action: {
                         guard !self.mioTodo.isEmpty else { return }
